@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const [data, setData] = useState([]);
@@ -15,10 +16,10 @@ export default function Home() {
   }
 
   const packages = data.map((item) => (
-    <div key={item.id}>
+    <Link key={item.id} to={`./package/${item.id}`}>
       <p>{item.status}</p>
       <p>{item.id}</p>
-    </div>
+    </Link>
   ));
 
   return (
