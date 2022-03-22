@@ -1,26 +1,18 @@
-import { useParams, useNavigate } from "react-router-dom";
+// npm
+import { useParams } from "react-router-dom";
+
+import PackageItemDetail from "../components/packageItemDetail";
 
 export default function Package({ data }) {
   const { id } = useParams();
-  const navigate = useNavigate();
-  console.log("Package data", data);
 
   // properties
-  const filteredDataArray = data
-    .filter((item) => item.parcel_id === id)
-    .map((prod) => (
-      <div key={prod.id}>
-        <p>{prod.status}</p>
-        <p>{prod.sender}</p>
-        <button onClick={() => navigate(-1)}>Go back</button>
-      </div>
-    ));
-  console.log("filteredDataArray packages", filteredDataArray);
+  const filteredData = data.filter((item) => item.parcel_id === id);
 
-  return (
-    <div>
-      Package - {id}
-      {filteredDataArray}
-    </div>
-  );
+  // components
+  const packageItem = filteredData.map((item) => (
+    <PackageItemDetail item={item} />
+  ));
+
+  return <div>{packageItem}</div>;
 }
