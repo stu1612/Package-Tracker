@@ -1,5 +1,5 @@
 // npm
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 // pages
 import Home from "./pages/Home";
 import Package from "./pages/Package";
@@ -19,6 +19,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/package/:id" element={<Package />} />
+        <Route path="/*" element={<Navigate replace to="/" />} />
       </Routes>
     </div>
   );
