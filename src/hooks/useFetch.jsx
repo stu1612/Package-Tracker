@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import jsonData from "../data/packages.json";
 
 export default function useFetch(url) {
   const [data, setData] = useState(null);
@@ -16,6 +17,7 @@ export default function useFetch(url) {
       } catch (err) {
         setLoading(false);
         setError("Could not fetch data");
+        setData(jsonData);
         console.log(err.message);
       }
     }
