@@ -7,7 +7,7 @@ export default function Home() {
   const [url, setUrl] = useState(
     "https://my.api.mockaroo.com/insta-orders.json?key=e49e6840"
   );
-  const { data } = useFetch(url);
+  const { data, loading } = useFetch(url);
   // components
   const packageItems =
     data && data.map((item) => <PackageItem key={item.id} item={item} />);
@@ -18,10 +18,12 @@ export default function Home() {
   //   setData(newList);
   // }
 
+  const isPending = loading && <h2>Loading ..</h2>;
+
   return (
     <div>
+      {isPending}
       {packageItems}
-      <button>Hello</button>
     </div>
   );
 }
