@@ -1,25 +1,19 @@
 // npm
 import { Routes, Route } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 // pages
 import Home from "./pages/Home";
 import Package from "./pages/Package";
+// hooks
+import useFetch from "./hooks/useFetch";
 // styles
 import "./styles/styles.css";
 
 export default function App() {
-  const [data, setData] = useState([]);
-  const url = "https://my.api.mockaroo.com/insta-orders.json?key=e49e6840";
-
-  useEffect(() => {
-    fetchData(url);
-  }, []);
-
-  async function fetchData(url) {
-    const response = await fetch(url);
-    const jsonData = await response.json();
-    return setData(jsonData);
-  }
+  const [url, setUrl] = useState(
+    "https://my.api.mockaroo.com/insta-orders.json?key=e49e6840"
+  );
+  const { data } = useFetch(url);
 
   return (
     <div className="App">
