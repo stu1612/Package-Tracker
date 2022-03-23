@@ -1,3 +1,4 @@
+// npm
 import { useEffect, useState } from "react";
 
 export default function useFetch(url) {
@@ -16,14 +17,14 @@ export default function useFetch(url) {
         const json = await response.json();
         setLoading(false);
         setData(json);
-        setError(null);
+        // setError(null);
       } catch (err) {
         if (err.name === "AbortError") {
-          console.log("fetch was aborted");
+          console.error("Fetch was aborted");
         } else {
           setLoading(false);
           setError("Could not fetch data");
-          console.log(err.message);
+          console.error(err.message);
         }
       }
     }
