@@ -1,9 +1,11 @@
 /* base */
+@import "./_base/colors.css";
 @import "./_base/layout.css";
 
 /* atoms */
 
 /* molecules */
+@import "./molecules/searchInput.css";
 
 /* organisms */
 @import "./organisms/banner.css";

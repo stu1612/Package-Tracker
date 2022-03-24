@@ -1,8 +1,9 @@
 :root {
-  --cl-blue: #005D92;
-  --cl-light-blue: #47B1E0;
-  --cl-lighter-blue: #8EDCF9;
-  --cl-green: #ABE3BB;
-  --cl-pink: #FBC2C1;
+  --cl-blue: #005d92;
+  --cl-light-blue: #47b1e0;
+  --cl-lighter-blue: #8edcf9;
+  --cl-green: #abe3bb;
+  --cl-pink: #fbc2c1;
   --cl-black: #171717;
-  --cl-white: #fafafa
+  --cl-white: #fafafa;
+}

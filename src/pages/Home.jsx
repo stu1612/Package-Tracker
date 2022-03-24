@@ -20,7 +20,10 @@ export default function Home() {
   return (
     <div>
       {isLoading}
-      <Banner />
+      <Banner
+        handleChange={(event) => onChangeHandler(event, setQuery)}
+        query={query}
+      />
       <SearchItem
         handleChange={(event) => onChangeHandler(event, setQuery)}
         query={query}
