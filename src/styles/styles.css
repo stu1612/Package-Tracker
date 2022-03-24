@@ -6,6 +6,7 @@
 /* molecules */
 
 /* organisms */
+@import "./organisms/navbar.css";
 @import "./organisms/statusCounter.css";
 
 /* templates */

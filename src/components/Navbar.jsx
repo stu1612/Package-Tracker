@@ -20,7 +20,7 @@ export default function Navbar() {
     <header>
       <nav>
         <h1>InstaPaket</h1>
-        <div>
+        <ul>
           {Object.keys(lngs).map((lng) => (
             <button
               key={lng}
@@ -31,7 +31,7 @@ export default function Navbar() {
               {lngs[lng].img}
             </button>
           ))}
-        </div>
+        </ul>
       </nav>
     </header>
   );

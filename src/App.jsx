@@ -11,22 +11,14 @@ import Navbar from "./components/Navbar";
 import "./styles/styles.css";
 
 export default function App() {
-  const { t, i18n } = useTranslation();
   return (
     <div className="App">
-      {/* <p>
-        <Trans i18nKey="description.part1">
-          Edit <code>src/App.js</code> and save to reload.
-        </Trans>
-      </p> */}
       <Navbar />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/package/:id" element={<Orders />} />
         <Route path="/*" element={<Navigate replace to="/" />} />
       </Routes>
-      <p>{t("description.part2")}</p>
       <Footer />
     </div>
   );
