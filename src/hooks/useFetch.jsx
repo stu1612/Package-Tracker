@@ -15,15 +15,13 @@ export default function useFetch(url) {
           throw new Error(response.statusText);
         }
         const json = await response.json();
-        setLoading(false);
+        fetchSuccess(setLoading, setError);
         setData(json);
-        setError(null);
       } catch (err) {
         if (err.name === "AbortError") {
           console.error("Fetch was aborted");
         } else {
-          setLoading(false);
-          setError("Could not fetch data");
+          fetchFailed(setLoading, setError);
           console.error(err.message);
         }
       }
@@ -34,4 +32,14 @@ export default function useFetch(url) {
     };
   }, [url]);
   return { data, loading, error };
+}
+
+function fetchSuccess(loadingState, errorState) {
+  loadingState(false);
+  errorState(null);
+}
+
+function fetchFailed(loadingState, errorState) {
+  loadingState(false);
+  errorState("Unable to make fetch request");
 }
