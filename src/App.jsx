@@ -9,10 +9,21 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 // styles
 import "./styles/styles.css";
+// images
+import sweden from "./assets/images/icons/sv.png";
+import denmark from "./assets/images/icons/da.png";
+import norway from "./assets/images/icons/no.png";
+import uk from "./assets/images/icons/uk.png";
 
 const lngs = {
-  en: { nativeName: "English" },
-  de: { nativeName: "Deutsch" },
+  // en: { nativeName: "English" },
+  // sv: { nativeName: "Swedish" },
+  // da: { nativeName: "Danish" },
+  // no: { nativeName: "Norweigen" },
+  en: { img: <img src={uk} alt="united kingdom flag" /> },
+  sv: { img: <img src={sweden} alt="swedish flag" /> },
+  da: { img: <img src={denmark} alt="danish flag" /> },
+  no: { img: <img src={norway} alt="norweigen flag" /> },
 };
 
 export default function App() {
@@ -29,7 +40,8 @@ export default function App() {
             type="submit"
             onClick={() => i18n.changeLanguage(lng)}
           >
-            {lngs[lng].nativeName}
+            {/* {lngs[lng].nativeName} */}
+            {lngs[lng].img}
           </button>
         ))}
       </div>

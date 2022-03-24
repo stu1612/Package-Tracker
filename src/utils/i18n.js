@@ -20,16 +20,44 @@ i18n
       en: {
         translation: {
           description: {
-            part1: "Edit <1>src/App.js</1> and save to reload.",
-            part2: "Learn React",
+            part1: "Hi Carl, track all your orders and packages",
+            part2: "Ready for collection",
+            part3: "Delivered",
+            part4: "On the way",
+            part5: "Order info received",
           },
         },
       },
-      de: {
+      sv: {
         translation: {
           description: {
-            part1: "Ändere <1>src/App.js</1> und speichere um neu zu laden.",
-            part2: "Lerne React",
+            part1: "Hej Carl, spåra alla dina beställningar och paket",
+            part2: "Redo för insamling",
+            part3: "Levereras",
+            part4: "På väg",
+            part5: "Beställningsinformation mottagen",
+          },
+        },
+      },
+      da: {
+        translation: {
+          description: {
+            part1: "Hej Carl, spor alle dine ordrer og pakker",
+            part2: "Klar til afhentning",
+            part3: "Leveret",
+            part4: "På vej",
+            part5: "Ordreinformation modtaget",
+          },
+        },
+      },
+      no: {
+        translation: {
+          description: {
+            part1: "Hei Carl, spor alle dine bestillinger og pakker",
+            part2: "Klar for innsamling",
+            part3: "Levert",
+            part4: "Er på vei",
+            part5: "Bestillingsinfo mottatt",
           },
         },
       },
