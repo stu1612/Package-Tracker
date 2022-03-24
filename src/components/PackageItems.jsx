@@ -1,5 +1,5 @@
 // components
-import PackageItem from "../components/PackageItem";
+import PackageItem from "./PackageItem";
 // data
 import jsonData from "../data/packages.json";
 
