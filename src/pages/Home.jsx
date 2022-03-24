@@ -1,12 +1,13 @@
 // npm
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import useFetch from "../hooks/useFetch";
 // components
 import PackageItem from "../components/PackageItem";
+import PackageItemCounter from "../components/PackageItemCounter";
 // data
 import jsonData from "../data/packages.json";
 // utils
-import { url } from "../utils/packageURL";
+import { url } from "../utils/api";
 
 export default function Home() {
   const { data, loading, error } = useFetch(url);
@@ -48,6 +49,7 @@ export default function Home() {
         </label>
       </div>
 
+      <PackageItemCounter data={data} />
       {isLoading}
       {packages}
       {backupPackages}
