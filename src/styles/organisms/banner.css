@@ -1,0 +1,33 @@
+.banner-image {
+  height: 60vh;
+  width: 100%;
+  background-image: linear-gradient(rgb(0, 93, 146), rgb(0, 93, 146)),
+    url("../../assets/images/banner.jpg");
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+}
+
+h2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 40%;
+  top: 50%;
+  font-size: 26px;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    left: 50%;
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 940px) {
+  h2 {
+    font-size: 46px;
+  }
+}
