@@ -21,10 +21,10 @@ i18n
         translation: {
           description: {
             part1: "Hi Carl, track all your orders and packages",
-            part2: "Ready for collection",
-            part3: "Delivered",
-            part4: "On the way",
-            part5: "Order info received",
+            part2: "Order info received",
+            part3: "On the way",
+            part4: "Ready for collection",
+            part5: "Delivered",
           },
         },
       },
@@ -32,10 +32,10 @@ i18n
         translation: {
           description: {
             part1: "Hej Carl, spåra alla dina beställningar och paket",
-            part2: "Redo för insamling",
-            part3: "Levereras",
-            part4: "På väg",
-            part5: "Beställningsinformation mottagen",
+            part2: "Beställningsinformation mottagen",
+            part3: "På väg",
+            part4: "Redo för insamling",
+            part5: "Levereras",
           },
         },
       },
@@ -43,10 +43,10 @@ i18n
         translation: {
           description: {
             part1: "Hej Carl, spor alle dine ordrer og pakker",
-            part2: "Klar til afhentning",
-            part3: "Leveret",
-            part4: "På vej",
-            part5: "Ordreinformation modtaget",
+            part2: "Ordreinformation modtaget",
+            part3: "På vej",
+            part4: "Klar til afhentning",
+            part5: "Leveret",
           },
         },
       },
@@ -54,10 +54,10 @@ i18n
         translation: {
           description: {
             part1: "Hei Carl, spor alle dine bestillinger og pakker",
-            part2: "Klar for innsamling",
-            part3: "Levert",
-            part4: "Er på vei",
-            part5: "Bestillingsinfo mottatt",
+            part2: "Bestillingsinfo mottatt",
+            part3: "Er på vei",
+            part4: "Klar for innsamling",
+            part5: "Levert",
           },
         },
       },

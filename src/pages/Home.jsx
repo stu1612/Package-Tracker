@@ -4,11 +4,12 @@ import { useState } from "react";
 import useFetch from "../hooks/useFetch";
 // components
 import PackageItems from "../components/PackageItems";
-import PackageStatusCounter from "../components/PackageStatusCounter";
+import StatusCounter from "../components/StatusCounter";
 import SearchItem from "../components/SearchItem";
 // utils
 import { url } from "../utils/api";
 import onChangeHandler from "../utils/onChangeHandler";
+import Banner from "../components/Banner";
 
 export default function Home() {
   const [query, setQuery] = useState("");
@@ -19,11 +20,12 @@ export default function Home() {
   return (
     <div>
       {isLoading}
+      <Banner />
       <SearchItem
         handleChange={(event) => onChangeHandler(event, setQuery)}
         query={query}
       />
-      <PackageStatusCounter data={data} />
+      <StatusCounter data={data} />
       <PackageItems query={query} error={error} data={data} />
     </div>
   );

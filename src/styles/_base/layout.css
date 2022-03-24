@@ -17,3 +17,10 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
 }
+
+a,
+li {
+  text-decoration: none;
+  color: inhet;
+  list-style: none;
+}

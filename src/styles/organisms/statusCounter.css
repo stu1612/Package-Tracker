@@ -1,0 +1,26 @@
+.package-counter {
+  background-color: red;
+}
+
+.package-counter ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.package-counter ul li {
+  background-color: blue;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
