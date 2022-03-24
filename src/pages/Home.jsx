@@ -3,11 +3,12 @@ import { useState } from "react";
 import useFetch from "../hooks/useFetch";
 // components
 import PackageItem from "../components/PackageItem";
-import PackageItemCounter from "../components/PackageItemCounter";
+import PackageItemCounter from "../components/PackageStatusCounter";
 // data
 import jsonData from "../data/packages.json";
 // utils
 import { url } from "../utils/api";
+import PackageStatusCounter from "../components/PackageStatusCounter";
 
 export default function Home() {
   const { data, loading, error } = useFetch(url);
@@ -49,7 +50,7 @@ export default function Home() {
         </label>
       </div>
 
-      <PackageItemCounter data={data} />
+      <PackageStatusCounter data={data} />
       {isLoading}
       {packages}
       {backupPackages}

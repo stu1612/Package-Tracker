@@ -17,7 +17,7 @@ export default function useFetch(url) {
         const json = await response.json();
         setLoading(false);
         setData(json);
-        // setError(null);
+        setError(null);
       } catch (err) {
         if (err.name === "AbortError") {
           console.error("Fetch was aborted");

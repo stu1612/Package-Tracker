@@ -1,0 +1,6 @@
+[
+  { "id": 0, "title": "Delivered", "status": "delivered" },
+  { "id": 1, "title": "On the Way", "status": "on-the-way" },
+  { "id": 2, "title": "Recieved", "status": "order-info-received" },
+  { "id": 3, "title": "Collect", "status": "ready-for-pickup" }
+]
