@@ -8,7 +8,7 @@ export default function Package() {
   const { data } = location.state;
 
   return (
-    <div>
+    <div className="layout-1200">
       <PackageItemDetail data={data} />
     </div>
   );

@@ -14,6 +14,7 @@
 @import "./organisms/banner.css";
 @import "./organisms/navbar.css";
 @import "./organisms/packageItem.css";
+@import "./organisms/packageItemDetail.css";
 @import "./organisms/statusCounter.css";
 
 /* templates */
