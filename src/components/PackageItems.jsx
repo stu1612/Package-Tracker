@@ -5,6 +5,7 @@ import jsonData from "../data/packages.json";
 
 export default function PackageItems({ data, error, query }) {
   const packages = data
+    // eslint-disable-next-line array-callback-return
     .filter((item) => {
       if (query === "") {
         return item;

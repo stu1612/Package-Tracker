@@ -17,12 +17,11 @@ export default function useFetch(url) {
         const json = await response.json();
         fetchSuccess(setLoading, setError);
         setData(json);
-      } catch (err) {
-        if (err.name === "AbortError") {
+      } catch (error) {
+        if (error.name === "AbortError") {
           console.error("Fetch was aborted");
         } else {
           fetchFailed(setLoading, setError);
-          console.error(err.message);
         }
       }
     }

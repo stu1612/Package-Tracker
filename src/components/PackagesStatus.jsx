@@ -6,6 +6,7 @@ import statusList from "../data/packageStatus.json";
 
 export default function PackagesStatus({ data }) {
   const { t } = useTranslation();
+
   const packageStatus = statusList.map((status) => (
     <div key={status.id} className="package-status_item">
       <div className={`icon-wrapper ${status.className}`}>

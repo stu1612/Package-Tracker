@@ -1,9 +1,9 @@
 // npm
 import { useNavigate } from "react-router-dom";
 // components
-import UserInfo from "./UserInfo";
-import PackageInfo from "./PackageInfo";
 import DeliveryInformation from "./DeliveryInformation";
+import PackageInfo from "./PackageInfo";
+import UserInfo from "./UserInfo";
 
 export default function PackageItemDetail({ data }) {
   const navigate = useNavigate();

@@ -1,16 +1,12 @@
 // npm
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 export default function Banner() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className="banner-image">
-      <h2>
-        <Trans i18nKey="description.part1">
-          Hi Carl, track all your orders and packages
-        </Trans>
-      </h2>
+      <h2>{t("description.part1")}</h2>
     </div>
   );
 }

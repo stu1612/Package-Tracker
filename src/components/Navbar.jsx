@@ -1,9 +1,10 @@
 // npm
-import { useTranslation, Trans } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 // images
-import sweden from "../assets/images/icons/sv.png";
 import denmark from "../assets/images/icons/da.png";
 import norway from "../assets/images/icons/no.png";
+import sweden from "../assets/images/icons/sv.png";
 import uk from "../assets/images/icons/uk.png";
 
 const lngs = {
@@ -14,12 +15,13 @@ const lngs = {
 };
 
 export default function Navbar() {
-  const { t, i18n } = useTranslation();
+  let navigate = useNavigate();
+  const { i18n } = useTranslation();
 
   return (
     <header>
       <nav>
-        <h1>InstaPaket</h1>
+        <h1 onClick={() => navigate("/")}>InstaPaket</h1>
         <ul>
           {Object.keys(lngs).map((lng) => (
             <button

@@ -1,3 +1,4 @@
+// npm
 import Moment from "react-moment";
 
 export default function UserInfo({ data }) {
