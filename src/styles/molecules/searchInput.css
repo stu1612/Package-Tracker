@@ -3,10 +3,11 @@
   left: 50%;
   transform: translate(-50%, 20%);
   border: 0;
-  padding: 1rem 5rem;
+  padding: 1.5rem 5rem;
   border-radius: 100px;
   width: 90%;
   filter: drop-shadow(3px 6px 12px rgba(0, 0, 0, 0.2));
+  margin-top: 1rem;
 }
 
 @media (min-width: 768px) {

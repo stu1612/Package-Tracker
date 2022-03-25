@@ -16,6 +16,11 @@ nav {
   padding: 0 1rem;
 }
 
+h1 {
+  color: var(--cl-blue);
+  font-size: 18px;
+}
+
 .lng-button {
   border: 0;
   background: none;
@@ -37,5 +42,6 @@ nav {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
+    font-size: 22px;
   }
 }

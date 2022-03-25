@@ -10,12 +10,13 @@ import SearchItem from "../components/SearchItem";
 import { url } from "../utils/api";
 import onChangeHandler from "../utils/onChangeHandler";
 import Banner from "../components/Banner";
+import Loading from "../components/Loading";
 
 export default function Home() {
   const [query, setQuery] = useState("");
   const { data, loading, error } = useFetch(url);
   // components
-  const isLoading = loading && <h2>Loading ..</h2>;
+  const isLoading = loading && <Loading />;
 
   return (
     <div>

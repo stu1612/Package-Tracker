@@ -3,6 +3,15 @@
   border-radius: 25px;
   color: var(--cl-black);
   font-size: 14px;
+  outline: none;
+  border: 0;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  margin: 5rem 0;
+  padding: 1.5rem 3rem;
 }
 
 .btn-pink {
@@ -11,4 +20,11 @@
 
 .btn-green {
   background: var(--cl-green);
+}
+
+@media (min-width: 768px) {
+  .btn-primary {
+    width: 50%;
+    margin: 5rem auto;
+  }
 }

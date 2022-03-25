@@ -7,6 +7,8 @@
 @import "./atoms/button.css";
 
 /* molecules */
+@import "./molecules/footer.css";
+@import "./molecules/loading.css";
 @import "./molecules/searchInput.css";
 @import "./molecules/packageStatusIcon.css";
 
