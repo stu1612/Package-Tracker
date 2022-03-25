@@ -19,10 +19,18 @@ html {
 }
 
 a,
-li {
+li,
+button {
   text-decoration: none;
   color: inhet;
   list-style: none;
+  font-family: "Poppins", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.layout-768 {
+  width: min(95%, 768px);
+  margin: 0 auto;
 }
 
 .layout-1200 {

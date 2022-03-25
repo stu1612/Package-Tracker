@@ -1,6 +1,10 @@
 .package-status {
   background-color: var(--cl-blue);
-  padding-top: 10rem;
+  padding-top: 5rem;
+}
+
+.package-status_items {
+  padding: 2rem 0;
 }
 
 .package-status_item {

@@ -18,7 +18,7 @@ export default function PackageItems({ data, error, query }) {
     error && jsonData.map((item) => <PackageItem key={item.id} item={item} />);
 
   return (
-    <div>
+    <div className="layout-768">
       {packages}
       {backupPackages}
     </div>

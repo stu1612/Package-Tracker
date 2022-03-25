@@ -1,0 +1,14 @@
+.btn {
+  padding: 1rem 3rem;
+  border-radius: 25px;
+  color: var(--cl-black);
+  font-size: 14px;
+}
+
+.btn-pink {
+  background: var(--cl-pink);
+}
+
+.btn-green {
+  background: var(--cl-green);
+}

@@ -1,16 +1,19 @@
 /* base */
 @import "./_base/colors.css";
 @import "./_base/layout.css";
+@import "./_base/typography.css";
 
 /* atoms */
+@import "./atoms/button.css";
 
 /* molecules */
 @import "./molecules/searchInput.css";
+@import "./molecules/packageStatusIcon.css";
 
 /* organisms */
 @import "./organisms/banner.css";
 @import "./organisms/navbar.css";
-@import "./organisms/packageStatus.css";
+@import "./organisms/packageItem.css";
 @import "./organisms/statusCounter.css";
 
 /* templates */
