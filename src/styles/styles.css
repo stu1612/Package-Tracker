@@ -10,6 +10,7 @@
 /* organisms */
 @import "./organisms/banner.css";
 @import "./organisms/navbar.css";
+@import "./organisms/packageStatus.css";
 @import "./organisms/statusCounter.css";
 
 /* templates */
