@@ -40,3 +40,13 @@
   color: var(--cl-white);
   padding: 0.5rem 0;
 }
+
+.card-text:nth-child(2) {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.card-text:nth-child(4) {
+  color: var(--cl-black);
+  font-weight: 600;
+}

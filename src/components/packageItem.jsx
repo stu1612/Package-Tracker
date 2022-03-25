@@ -1,6 +1,7 @@
 // npm
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Moment from "react-moment";
 
 export default function PackageItem({ item }) {
   const { parcel_id, status, eta, verification_required } = item;
@@ -11,8 +12,10 @@ export default function PackageItem({ item }) {
       <div className="package-item_content">
         <div className="package-item_inner-box">
           <p className="btn btn-green">#{parcel_id}</p>
-          <p className="card-text">status: {status}</p>
-          <p className="card-text">eta: {eta}</p>
+          <p className="card-text">{status}</p>
+          <small className="card-text small">
+            ETA: <Moment>{eta}</Moment>
+          </small>
           <p className="card-text">
             {verification_required ? "ID verification is required" : null}
           </p>
